@@ -44,6 +44,8 @@ app.get('/', function (req, res) {
 app.post('/register', (req, res) => {
   // A user registers with a mobile phone number
   let phoneNumber = req.body.number;
+  phoneNumber = phoneNumber.replace(/\D/g,'');
+
   console.log(phoneNumber);
   nexmo.verify.request({number: phoneNumber, brand: 'Awesome Company'}, (err, result) => {
     if(err) {
