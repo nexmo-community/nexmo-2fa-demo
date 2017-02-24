@@ -2,6 +2,8 @@
 
 A simple 2FA demo written in Node.js, with a minimal web interface.
 
+![2FA Screenshot](https://github.com/nexmo-community/nexmo-2fa-demo/tree/master/views/screenshot.png?raw=true)
+
 ## Why 2FA?
 
 2FA works by combining something that you know (e.g. your password) and something
