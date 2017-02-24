@@ -49,7 +49,6 @@ app.post('/register', (req, res) => {
   console.log(phoneNumber);
   nexmo.verify.request({number: phoneNumber, brand: 'Awesome Company'}, (err, result) => {
     if(err) {
-      //res.sendStatus(500);
       res.render('status', {message: 'Server Error'});
     } else {
       console.log(result);
@@ -57,7 +56,6 @@ app.post('/register', (req, res) => {
       if(result.status == '0') {
         res.render('verify', {requestId: requestId});
       } else {
-        //res.status(401).send(result.error_text);
         res.render('status', {message: result.error_text, requestId: requestId});
       }
     }
@@ -71,16 +69,13 @@ app.post('/verify', (req, res) => {
 
   nexmo.verify.check({request_id: requestId, code: pin}, (err, result) => {
     if(err) {
-      //res.status(500).send(err);
       res.render('status', {message: 'Server Error'});
     } else {
       console.log(result);
       // Error status code: https://docs.nexmo.com/verify/api-reference/api-reference#check
       if(result && result.status == '0') {
-        //res.status(200).send('Account verified!');
         res.render('status', {message: 'Account verified! 🎉'});
       } else {
-        //res.status(401).send(result.error_text);
         res.render('status', {message: result.error_text, requestId: requestId});
       }
     }
