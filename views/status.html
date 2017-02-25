@@ -25,7 +25,7 @@
       Try with another PIN if you have one.<br>
       <form action="/verify" method="post">
         <div class="fa fa-key"></div>
-        <input type="number" name="pin" placeholder="1234" required>
+        <input type="tel" name="pin" placeholder="1234" required>
         <input type="hidden" name="requestId" value="<%= requestId %>" >
         <input type="submit" value="Verify PIN">
       </form>
