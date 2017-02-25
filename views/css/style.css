@@ -37,7 +37,7 @@ html {
 }
 body {
   padding: 0;
-  margin: 1em;
+  margin: 0;
   font-family: 'Noto Sans', sans-serif;
   background-size: cover;
 }
@@ -52,7 +52,7 @@ footer {
 }
 header {
   max-width: 600px;
-  margin: 1em auto 1em;
+  margin: 2em auto 1em;
 
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +61,7 @@ header {
 }
 header h1 {
   font-family: 'Alfa Slab One';
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: normal;
 }
 header .logo {
