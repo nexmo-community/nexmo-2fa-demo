@@ -37,7 +37,7 @@ html {
 }
 body {
   padding: 0;
-  margin: 0;
+  margin: 1em;
   font-family: 'Noto Sans', sans-serif;
   background-size: cover;
 }
@@ -52,7 +52,7 @@ footer {
 }
 header {
   max-width: 600px;
-  margin: 2em auto 1em;
+  margin: 1em auto 1em;
 
   display: -ms-flexbox;
   display: flex;
@@ -61,11 +61,11 @@ header {
 }
 header h1 {
   font-family: 'Alfa Slab One';
-  font-size: 2.4em;
+  font-size: 1.6em;
   font-weight: normal;
 }
 header .logo {
-  width: 120px;
+  width: 80px;
   display: block;
 }
 form {
@@ -144,4 +144,13 @@ section[section] {
 }
 .status {
   font-size: 1.5em;
+}
+
+@media (min-width: 640px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+  header .logo {
+    width: 120px;
+  }
 }
