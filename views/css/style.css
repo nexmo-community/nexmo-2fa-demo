@@ -1,29 +1,29 @@
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/* Color Theme
-#225378 dark blue
-#1695A3 teal
-#ACF0F2 pale blue
-#F3FFE2 pale yellow
-#EB7F00 orange
+/* Nexmo Brand Color Theme
+#148dcd Main Blue
+#002744 Blue black
+#deedf7 Faint gray
+#f0537a Magenta - Accent color
+#ffef74 Yellow - Accent color
 */
 body {
-  background: #225378;
-  color: #ACF0F2;
+  background: #148dcd;
+  color: #deedf7;
 }
 #main {
-  background: #1695A3;
+  background: #deedf7;
 }
 .intro {
-  background: #F3FFE2;
-  color: #EB7F00
+  background: #013861;
+  color: #deedf7
 } /* also .intro:before */
 a {
-  color: #EB7F00;
+  color: #ffef74;
 }
 input[type=submit] {
-  background: #EB7F00;
-  color: #F3FFE2;
+  background: #f0537a;
+  color: #deedf7;
 }
 .fa-key {
   background: #ACF0F2;
@@ -38,7 +38,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-size: cover;
 }
 h1, h2, h3 {
@@ -60,8 +60,7 @@ header {
   justify-content: space-between;
 }
 header h1 {
-  font-family: 'Alfa Slab One';
-  font-size: 1.5em;
+  font-size: 5.5vw;
   font-weight: normal;
 }
 header .logo {
@@ -89,9 +88,7 @@ input:not(:last-of-type) {
 }
 input[type=tel] {
   width: 170px;
-}
-input[type=text] {
-  flex-grow: 1;
+  border: 1px solid #89b8d2;
 }
 input[type=submit]:active {
   position: relative;
@@ -122,7 +119,7 @@ input[type=submit]:active {
   left: 50px;
   top: 46px;
   border: 10px solid;
-  border-color: #F3FFE2 transparent transparent #F3FFE2;
+  border-color: #013861 transparent transparent #013861;
 }
 .response {
   color: #f7d51b;
@@ -146,9 +143,9 @@ section[section] {
   font-size: 1.5em;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 50em) {
   header h1 {
-    font-size: 2.2em;
+    font-size: 40px;
   }
   header .logo {
     width: 120px;
