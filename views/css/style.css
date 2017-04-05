@@ -9,7 +9,7 @@
 */
 body {
   background: #148dcd;
-  color: #deedf7;
+  color: #013861;
 }
 #main {
   background: #deedf7;
@@ -26,8 +26,8 @@ input[type=submit] {
   color: #deedf7;
 }
 .fa-key {
-  background: #ACF0F2;
-  color: #1695A3;
+  background: #002744;
+  color: #deedf7;
 }
 
 
