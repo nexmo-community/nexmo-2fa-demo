@@ -2,7 +2,7 @@
 
 A simple 2FA demo written in Node.js, with a minimal web interface.
 
-![2FA Screenshot](https://github.com/nexmo-community/nexmo-2fa-demo/blob/master/views/screenshot.png?raw=true)
+![2FA Screenshot](https://github.com/nexmo-community/nexmo-2fa-demo/blob/master/views/screenshot.gif?raw=true)
 
 ## Why 2FA?
 
